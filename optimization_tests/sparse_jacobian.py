@@ -32,8 +32,8 @@ def sparse_jacob(x_vals):
         elif i == 998: #x998 + x997 - x127 / (x348 + 2)
             func = x_val + x_vals[997] - x_vals[127] / (x_vals[348] + 2);
             f_vals.append(func);
-        elif i == 798: #x798 / (x0 + x7) - ad.cos(x454) * x6
-            func = x_val / (x_vals[0] + x_vals[7]) - ad.cos(x_vals[454]) * x_vals[6];
+        elif i == 798: #x798*x0 / 32 - ad.cos(x454) * x6
+            func = x_val * x_vals[0] / (32) - ad.cos(x_vals[454]) * x_vals[6];
             f_vals.append(func)
         else:
             f_vals.append(x_val);
