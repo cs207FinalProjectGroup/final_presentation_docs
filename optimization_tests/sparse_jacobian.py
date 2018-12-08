@@ -20,9 +20,9 @@ def sparse_jacob(x_vals):
         elif i == 445: #x445**2 - x23
             func = x_val**2 - x_vals[23];
             f_vals.append(func);
-#         elif i == 690: #x690 * x450 - x888
-#             func = x_val * x_vals[450] - x_vals[888];
-#             f_vals.append(func);
+        elif i == 690: #x690 - x451 - x888
+            func = x_val - x_vals[451] - x_vals[888];
+            f_vals.append(func);
 #         elif i == 887: #x887**-1 * x200/4
 #             func = x_val**(-1) * x_vals[200]/4;
 #             f_vals.append(func);
